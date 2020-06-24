@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sach todo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="banner">
+        <div class="banner-img">
+            <img src="https://www.andbeyond.com/wp-content/uploads/sites/5/Amazon-Rain-Forest.jpg" alt="">
+        </div>
+        <p>Động vật lý thú</p>
+    </div>
+
+    <div class="section">
+        <div class="section-form">
+            <form action="/new-todo" method="POST">
+                <input type="text" name="name" placeholder="Tên">
+                <input type="text" name="link" placeholder="Link">
+                <button type="submit">Tạo mới</button>
+            </form>
+        </div>
+        <div class="section-item">
+            <% for (let i=0; i<results.length; i++){ %>
+            <div class="item">
+                <div class="item-pic">
+                    <img src="<%= results[i].link %>" alt="">
+                </div>
+                <!-- <p><b><%= results[i].name %></b></p> -->
+
+                <a href="/todo/<%= results[i]._id %>"><b><%= results[i].name %></b></a>
+            </div>
+            <% } %>
+        </div>
+    </div>
+</body>
+
+</html>

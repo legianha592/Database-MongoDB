@@ -1,0 +1,82 @@
+.banner{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 900;
+    background-color: white;
+}
+
+.banner-img{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.banner p{
+    font-size: 30pt;
+    line-height: 40px;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 15px 0;
+}
+
+.section{
+    position: relative;
+    margin-top: 250px;
+}
+
+.section-form{
+    display: flex;
+    justify-content: center;
+}
+
+.section-item{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.item{
+    width: 350px;
+    height: 350px;
+    border: solid 2px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(216, 226, 253);
+    margin: 20px 0;
+}
+
+.item img:hover{
+    transform: scale(1.5, 1.5)
+}
+
+.item .item-pic{
+    width: 250px;
+    height: 250px;
+    border: solid 1px black;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.item img{
+    width: 250px;
+    height: 250px;
+    border: solid 1px black;
+    border-radius: 50%;
+    transition: all 1s ease;
+}
+
+
+.item b{
+    font-size: 25pt;
+    font-weight: 700;
+    line-height: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
